@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://kit.fontawesome.com/9aac5a366c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reminder.css">
+    <title>Assignment Reminder</title>
+    
+</head>
+
+<body>
+
+    <header>
+        <h2>Task Flow</h2>
+        <p>Task Reminder. avoid missed task.</p>
+    </header>
+    <div class="dashboard">
+        <section class="stats">
+
+            <div class="stats-card" id="t">
+                <p>Total</p>
+                <h2 id="total-task">0</h2>
+            </div>
+
+            <div class="stats-card" id="p">
+                <p>pending</p>
+                <h2 id="pending-task">0</h2>
+            </div>
+
+            <div class="stats-card" id="c">
+                <p>Completed</p>
+                <h2 id="completed-task">0</h2>
+            </div>
+
+        </section>
+    </div>
+
+
+    <form class="task-form" id="Taskform">
+        <h2>Add new Task</h2>
+
+        <div class="task-choices">
+            <button id="low-task">LOW-PRIORITY</button>
+            <button id="high-task">HIGH-PRIORITY</button>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="input-task" placeholder="Enter Your Task Title..." required>
+            <input type="text" id="input-description" placeholder="Enter Your Description..." required>
+            <button type="submit">+ Add</button>
+        </div>
+    </form>
+
+
+    <section class="Task-list">
+
+        <h2>Your Task</h2>
+
+        <div id="taskContainer">
+
+            <div class="message-empty">
+
+                <p>No Task Found...</p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <script src="reminder.js"></script>
+</body>
+
+</html>
